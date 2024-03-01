@@ -16,7 +16,7 @@ cluster:
   # annotations:
     # key: value
   labels:
-    deploy-harbor: true
+    deploy-harbor: 'true'
   name: harbor-rke2-cluster
   config:
     systemDefaultRegistry: docker.io # default registry
