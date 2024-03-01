@@ -1,6 +1,6 @@
 defaultNamespace: default
 helm:
-  chart: git::http://rancherfederal.github.io/rancherfederal/rancher-cluster-templates.git
+  chart: git::https://rancherfederal.github.io/rancherfederal/rancher-cluster-templates.git
   releaseName: harbor-cluster-template
   version: 0.4.4
   valuesFiles:
