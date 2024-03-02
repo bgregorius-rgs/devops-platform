@@ -4,7 +4,7 @@
 cloudprovider: amazonec2
 
 # cloud provider credentials (example: aws-creds)
-cloudCredentialSecretName: aws-creds
+cloudCredentialSecretName: cc-bnlbp
 
 # rancher manager url
 rancher:
