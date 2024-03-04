@@ -197,7 +197,7 @@ nodepools:
     keypairName: ''
     securityGroupReadonly: false
     sshKeyContents: ''
-    subnetId: subnet-0b010a41304914b66
+    subnetId: subnet-09c447314790930d6
     zone: b
     monitoring: false
     usePrivateAddress: true
@@ -260,7 +260,7 @@ nodepools:
     keypairName: ''
     securityGroupReadonly: false
     sshKeyContents: ''
-    subnetId: subnet-0b010a41304914b66
+    subnetId: subnet-0006a00914b04aa7d
     zone: c
     monitoring: false
     usePrivateAddress: true
