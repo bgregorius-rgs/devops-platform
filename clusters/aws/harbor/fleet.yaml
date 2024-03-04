@@ -1,6 +1,19 @@
 defaultNamespace: default
 helm:
-  chart: github.com/rancherfederal/rancher-cluster-templates.git
-  releaseName: harbor-cluster-template
+  repo: https://rancherfederal.github.io/rancher-cluster-templates
+  chart: rancher-cluster-templates
+  version: 0.4.4
+  releaseName: rancher-cluster-templates
   valuesFiles:
     - values.yaml
+diff:
+   comparePatches:
+   - apiVersion: provisioning.cattle.io/v1
+     kind: Cluster
+     namespace: fleet-default
+     name: harbor-cluster-template
+     operations:
+     - {"op": "remove", "path": "/spec/localClusterAuthEndpoint"}
+     - {"op": "remove", "path": "/spec/rkeConfig/machinePools"}
+     - {"op": "remove", "path": "/spec/rkeConfig/registries/configs/rgcrprod.azurecr.us"}
+     - {"op": "remove", "path": "/spec/rkeConfig/machineSelectorConfig"}
