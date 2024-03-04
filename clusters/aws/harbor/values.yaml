@@ -94,7 +94,7 @@ nodepools:
     controlplane: true
     worker: true
     paused: false
-    ami: ami-080e1f13689e07408 
+    ami: ami-04cc2b0ad9e30a9c8 
     deviceName: /dev/sda1
     encryptEbsVolume: false
     endpoint: ''
@@ -127,7 +127,7 @@ nodepools:
     controlplane: true
     worker: true
     paused: false
-    ami: ami-080e1f13689e07408 
+    ami: ami-04cc2b0ad9e30a9c8 
     deviceName: /dev/sda1
     encryptEbsVolume: false
     endpoint: ''
@@ -160,7 +160,7 @@ nodepools:
     controlplane: true
     worker: true
     paused: false
-    ami: ami-080e1f13689e07408 
+    ami: ami-04cc2b0ad9e30a9c8 
     deviceName: /dev/sda1
     encryptEbsVolume: false
     endpoint: ''
