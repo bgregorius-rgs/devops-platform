@@ -110,8 +110,8 @@ nodepools:
     subnetId: subnet-0b010a41304914b66 # required (example: subnet-123456789)
     zone: a # required (example: a)
     monitoring: false
-    usePrivateAddress: true
-    privateAddressOnly: true
+    usePrivateAddress: false
+    privateAddressOnly: false
     requestSpotInstance: false
     # spotPrice: ''
     # tags: ''
@@ -143,8 +143,8 @@ nodepools:
     subnetId: subnet-09c447314790930d6 # required (example: subnet-123456789)
     zone: b # required (example: a)
     monitoring: false
-    usePrivateAddress: true
-    privateAddressOnly: true
+    usePrivateAddress: false
+    privateAddressOnly: false
     requestSpotInstance: false
     # spotPrice: ''
     # tags: ''
@@ -176,8 +176,8 @@ nodepools:
     subnetId: subnet-0006a00914b04aa7d # required (example: subnet-123456789)
     zone: c # required (example: a)
     monitoring: false
-    usePrivateAddress: true
-    privateAddressOnly: true
+    usePrivateAddress: false
+    privateAddressOnly: false
     requestSpotInstance: false
     # spotPrice: ''
     # tags: ''
