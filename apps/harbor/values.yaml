@@ -198,7 +198,7 @@ persistence:
     jobservice:
       jobLog:
         existingClaim: ""
-        storageClass: ""
+        storageClass: "longhorn"
         subPath: ""
         accessMode: ReadWriteMany
         size: 10Gi
