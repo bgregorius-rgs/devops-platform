@@ -1,0 +1,7 @@
+bootstrapPassword: admin
+hostname: rancher.rgs-demo.xyz
+replicas: 3
+ingress:
+  tls:
+    source: secret
+additionalTrustedCAs: true

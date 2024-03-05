@@ -1,0 +1,29 @@
+---
+# Source: cert-manager-resources/templates/apitokens.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: cloudflare-api-token-secret
+  namespace: cert-manager
+type: Opaque
+stringData:
+  api-token: "1iYgdnJirhS2Kz1CkndV7zgFpyo6P7nKycelFsd5"
+---
+# Source: cert-manager-resources/templates/clusterissuers.yaml
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-prod
+spec:
+  acme:
+    email: bryan.gregorius@ranchergovernment.com
+    privateKeySecretRef:
+      name: issuer-account-key
+    server: https://acme-v02.api.letsencrypt.org/directory
+    solvers:
+    - dns01:
+        cloudflare:
+          apiTokenSecretRef:
+            key: api-token
+            name: cloudflare-api-token-secret
+          email: bryan.gregorius@ranchergovernment.com

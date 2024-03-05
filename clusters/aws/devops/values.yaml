@@ -17,7 +17,7 @@ cluster:
     # key: value
   labels:
     deploy-harbor: 'true'
-  name: harbor-rke2-cluster
+  name: devops-rke2-cluster
   config:
     systemDefaultRegistry: docker.io # default registry
     kubernetesVersion: v1.26.13+rke2r1 # https://github.com/rancher/rke2/releases
@@ -88,7 +88,7 @@ cluster:
 
 # node and nodepool(s) values
 nodepools:
-  - name: pool-a
+  - name: devops-pool-a
     # displayName: cp-nodes
     quantity: 1
     etcd: true
@@ -124,7 +124,7 @@ nodepools:
     # httpTokens: ''
     iamInstanceProfile: # required (example: rancher-iam-instance-profile) - https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/set-up-cloud-providers/amazon
     insecureTransport: false
-    instanceType: 'm5.xlarge' # required (example: m5.2xlarge)
+    instanceType: 'm5.large' # required (example: m5.2xlarge)
     region: us-east-1  # required (example: us-east-1)
     createSecurityGroup: true
     securityGroups: [''] # https://ranchermanager.docs.rancher.com/getting-started/installation-and-upgrade/installation-requirements/port-requirements
@@ -151,7 +151,7 @@ nodepools:
     # userData: |
       #cloud-config
 
-  - name: pool-b
+  - name: devops-pool-b
     # displayName: cp-nodes
     quantity: 1
     etcd: true
@@ -187,7 +187,7 @@ nodepools:
     # httpTokens: ''
     iamInstanceProfile: # required (example: rancher-iam-instance-profile) - https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/set-up-cloud-providers/amazon
     insecureTransport: false
-    instanceType: 'm5.xlarge' # required (example: m5.2xlarge)
+    instanceType: 'm5.large' # required (example: m5.2xlarge)
     region: us-east-1  # required (example: us-east-1)
     createSecurityGroup: true
     securityGroups: [''] # https://ranchermanager.docs.rancher.com/getting-started/installation-and-upgrade/installation-requirements/port-requirements
@@ -214,7 +214,7 @@ nodepools:
     # userData: |
       #cloud-config
 
-  - name: pool-c
+  - name: devops-pool-c
     # displayName: cp-nodes
     quantity: 1
     etcd: true
@@ -250,7 +250,7 @@ nodepools:
     # httpTokens: ''
     iamInstanceProfile: # required (example: rancher-iam-instance-profile) - https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/set-up-cloud-providers/amazon
     insecureTransport: false
-    instanceType: 'm5.xlarge' # required (example: m5.2xlarge)
+    instanceType: 'm5.large' # required (example: m5.2xlarge)
     region: us-east-1  # required (example: us-east-1)
     createSecurityGroup: true
     securityGroups: [''] # https://ranchermanager.docs.rancher.com/getting-started/installation-and-upgrade/installation-requirements/port-requirements
@@ -286,7 +286,7 @@ addons:
       # values here
 
   longhorn:
-    enabled: true
+    enabled: false
     version: 103.2.1+up1.5.3
     # values:
       # values here

@@ -1,0 +1,12 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: harbor
+  namespace: fleet-default
+spec:
+  repo: https://github.com/bgregorius-rgs/devops-platform.git
+  branch: main  
+  targets:
+  - clusterName: harbor-rke2-cluster
+  paths:
+  - "./apps/harbor"
