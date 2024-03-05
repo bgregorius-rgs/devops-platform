@@ -1,8 +1,7 @@
 defaultNamespace: harbor
 helm:
   repo: https://helm.goharbor.io
-  chart: harbor/harbor
-  version: 1.14.0
+  chart: harbor
   releaseName: harbor
   valuesFiles:
   - values.yaml
